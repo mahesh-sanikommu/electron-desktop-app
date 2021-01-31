@@ -1,0 +1,55 @@
+{
+  "name": "spider",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron": "^5.0.3",
+    "electron-packager": "^13.1.1",
+    "electron-reload": "^1.4.0",
+    "foreman": "^3.0.1",
+    "history": "^4.9.0",
+    "isomorphic-fetch": "^2.2.1",
+    "nodemon": "^1.19.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-push-menu": "^1.0.2",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "screen": "^0.2.10",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.1",
+    "sudo-prompt": "^9.0.0"
+  },
+  "main": "server/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "dev": "nf start -p 3000",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --icon=spider-logo.icns --out=release-builds"
+  },
+  "homepage": "./",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
